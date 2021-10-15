@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
 use Validator;
 use App\Models\TipoUsuario;
-use App\http\Resources\TipoUsuario as TipoUsuarioResource;
+use App\Http\Resources\TipoUsuario as TipoUsuarioResource;
 
 class TipoUsuarioController extends BaseController
 {
@@ -63,7 +63,7 @@ class TipoUsuarioController extends BaseController
         if(is_null($tipoUsuario)){
             return $this->sendError('El tipo de usuario no existe');
         }
-        return $this->sendResponse(new TipoUsuarioResource($tipoUsuario), 'Tipo de usuario encontrado');
+        return $this->sendResponse(new TipoUsuarioResource($tipoUsuario), 'Tipo de usuario encontrado.');
     }
 
     /**

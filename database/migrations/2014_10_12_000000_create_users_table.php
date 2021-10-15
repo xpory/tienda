@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('imagen');
+            $table->foreignId('id_tipo_usuario')->constrained('tipo_usuario', 'id')->onUpdate('cascade')->onDelete('restrict');
             $table->rememberToken();
             $table->timestamps();
         });
