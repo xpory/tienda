@@ -1,0 +1,4 @@
+configurar archivo .env
+ejecutar el comando "composer install"
+generar una llave con "php artisan key:generate"
+
