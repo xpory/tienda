@@ -8,7 +8,7 @@ use Validator;
 use App\Models\Empleado;
 use App\http\Resources\Empleado as EmpleadoResource;
 
-class EmpleadoController extends Controller
+class EmpleadoController extends BaseController
 {
     /**
      * Display a listing of the resource.

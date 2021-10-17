@@ -8,7 +8,7 @@ use Validator;
 use App\Models\EstadoPedido;
 use App\Http\Resources\EstadoPedido as EstadoPedidoResource;
 
-class EstadoPedidoController extends Controller
+class EstadoPedidoController extends BaseController
 {
     /**
      * Display a listing of the resource.

@@ -8,7 +8,7 @@ use Validator;
 use App\Models\PedidosProveedor;
 use App\Http\Resources\PedidosProveedor as PedidosProveedorResource;
 
-class PedidosProveedorController extends Controller
+class PedidosProveedorController extends BaseController
 {
     /**
      * Display a listing of the resource.

@@ -5,6 +5,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\TipoUsuarioController;
 use App\Http\Controllers\API\ArticuloController;
+use App\Http\Controllers\API\CategoriaController;
+use App\Http\Controllers\API\DetallePedidoProveedorController;
+use App\Http\Controllers\API\DetalleVentaController;
+use App\Http\Controllers\API\EmpleadoController;
+use App\Http\Controllers\API\EncabezadoVentaController;
+use App\Http\Controllers\API\BaseController;
+use App\Http\Controllers\API\EstadoPedidoController;
+use App\Http\Controllers\API\IvaController;
+use App\Http\Controllers\API\PedidosProveedorController;
+use App\Http\Controllers\API\ProveedorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +36,13 @@ Route::post('register', [AuthController::class, 'signup']);
 Route::middleware('auth:sanctum')->group( function () {
     Route::resource('tipos_usuario', TipoUsuarioController::class);
     Route::resource('articulo', ArticuloController::class);
+    Route::resource('categoria', CategoriaController::class);
+    Route::resource('detalle_pedido_proveedor', DetallePedidoProveedorController::class);
+    Route::resource('detalle_venta', DetalleVentaController::class);
+    Route::resource('empleado', EmpleadoController::class);
+    Route::resource('encabezado_venta', EncabezadoVentaController::class);
+    Route::resource('estado_pedido', EstadoPedidoController::class);
+    Route::resource('iva', IvaController::class);
+    Route::resource('pedidos_proveedor', PedidosProveedorController::class);
+    Route::resource('proveedor', ProveedorController::class);
 });

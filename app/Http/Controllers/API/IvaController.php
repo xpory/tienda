@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Validator;
 use App\Models\Iva;
 use App\Http\Resources\Iva as IvaResource;
-class IvaController extends Controller
+class IvaController extends BaseController
 {
     /**
      * Display a listing of the resource.

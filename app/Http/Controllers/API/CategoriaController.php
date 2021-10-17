@@ -8,7 +8,7 @@ use Validator;
 use App\Models\Categoria;
 use App\Http\Resources\Categoria as CategoriaResource;
 
-class CategoriaController extends Controller
+class CategoriaController extends BaseController
 {
     /**
      * Display a listing of the resource.

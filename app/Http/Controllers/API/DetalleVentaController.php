@@ -8,7 +8,7 @@ use Validator;
 use App\Models\DetalleVenta;
 use App\Http\Resources\DetalleVenta as DetalleVentaResource;
 
-class DetalleVentaController extends Controller
+class DetalleVentaController extends BaseController
 {
     /**
      * Display a listing of the resource.

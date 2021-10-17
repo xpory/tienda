@@ -15,8 +15,10 @@ class CreateProveedorTable extends Migration
     {
         Schema::create('proveedor', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre', 50)->comment('nombre de la categoria');
-            $table->string('descripcion', 100)->comment('descripcion de la categoria');;
+            $table->string('nombre', 50)->comment('nombre del proveedor');
+            $table->string('telefono', 9)->comment('numero de telefono de telefono');
+            $table->string('direccion', 100)->comment('Direccion del proveedor');
+            $table->string('correo', 100)->comment('Direccion de correo del proveedor');
             $table->boolean('estado')->comment('el estado en la que se encuentra FALSE inactivo y TRUE activo');;
             $table->timestamps();
         });

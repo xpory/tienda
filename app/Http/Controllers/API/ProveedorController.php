@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Validator;
 use App\Models\Proveedor;
 use App\Http\Resources\Proveedor as ProveedorResource;
-class ProveedorController extends Controller
+class ProveedorController extends BaseController
 {
     /**
      * Display a listing of the resource.
@@ -40,7 +40,6 @@ class ProveedorController extends Controller
     {
         $input = $request->all();
         $validator = Validator::make($input,[
-            'codigo' => 'required',
             'nombre' => 'required',
             'telefono' => 'required',
             'direccion' => 'required',
@@ -92,7 +91,6 @@ class ProveedorController extends Controller
     {
         $input = $request->all();
         $validator = Validator::make($input,[
-            'codigo' => 'required',
             'nombre' => 'required',
             'telefono' => 'required',
             'direccion' => 'required',

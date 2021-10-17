@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Validator;
 use App\Models\EncabezadoVenta;
 use App\Http\Resources\EncabezadoVenta as EncabezadoVentaResource;
-class EncabezadoVentaController extends Controller
+class EncabezadoVentaController extends BaseController
 {
     /**
      * Display a listing of the resource.
